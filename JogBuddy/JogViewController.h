@@ -33,6 +33,7 @@
     IBOutlet UIView *contentView; 
     UIView *infoView; 
     IBOutlet UISegmentedControl *mapSegmentedControl; 
+    CGRect oldSegmentControlRect; 
 }
 
 -(id) initWithCenterCoordinate:(CLLocationCoordinate2D) coord; 

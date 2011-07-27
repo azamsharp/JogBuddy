@@ -44,6 +44,8 @@
 {
     [super viewDidLoad];
     
+    oldSegmentControlRect = CGRectZero; 
+    
     self.mapView = [[MKMapView alloc] initWithFrame:self.contentView.bounds]; 
     
     self.jogPoints = [[NSMutableArray alloc] init]; 
@@ -74,20 +76,42 @@
     [UIView setAnimationTransition:([self.mapView superview] ?
 									UIViewAnimationTransitionFlipFromLeft : UIViewAnimationTransitionFlipFromRight) forView:self.contentView cache:YES]; 
     
+    if(CGRectIsEmpty(oldSegmentControlRect)) 
+    {
+        oldSegmentControlRect = self.mapSegmentedControl.frame; 
+    }
+    
+    
     if([self.mapView superview]) 
     {
+        CGRect mapSegmentRect = self.mapSegmentedControl.bounds;  
+        
+        [UIView beginAnimations:nil context:nil]; 
+        [UIView setAnimationDuration:0.75]; 
+        [UIView setAnimationTransition:UIViewAnimationOptionTransitionNone forView:self.mapSegmentedControl cache:YES]; 
+        
+        self.mapSegmentedControl.frame = CGRectMake(self.mapSegmentedControl.frame.origin.x, 500, self.mapSegmentedControl.frame.size.width, self.mapSegmentedControl.frame.size.height); 
+        
+        [UIView commitAnimations];
         
         [self.mapView removeFromSuperview];
       
         InfoViewController *infoViewController = [[InfoViewController alloc] initWithJogInfo:jogInfo]; 
         self.infoView = infoViewController.view; 
 
-        self.infoView.frame = self.contentView.bounds; 
+        
+        self.infoView.frame = CGRectMake(0, 0, self.contentView.frame.size.width, 
+                                            self.contentView.frame.size.height + mapSegmentRect.size.height);  
+        
+        
         [self.contentView addSubview:self.infoView]; 
+ 
         
     }
     else 
-    {
+    {        
+        self.mapSegmentedControl.frame = oldSegmentControlRect; 
+        
         [self.view addSubview:self.mapSegmentedControl]; 
 
         [self.infoView removeFromSuperview];

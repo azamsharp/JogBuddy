@@ -56,7 +56,7 @@
     UIImage *backgroundImage = [UIImage imageNamed:@"fiberglass.jpg"];
 
     
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"fiberglass.jpg"]];
+   // self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"fiberglass.jpg"]];
     
 }
 

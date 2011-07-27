@@ -101,6 +101,7 @@ NSString *const GOOGLE_WEATHER_FEED = @"http://www.google.com/ig/api?weather=";
     
     UIBarButtonItem *startButton = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(loadMap)];
 
+
     UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"jogbuddy_logo.png"]];
     
     UIBarButtonItem *titleButton = [[UIBarButtonItem alloc] initWithCustomView:logoView];     

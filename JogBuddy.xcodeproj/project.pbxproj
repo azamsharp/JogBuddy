@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D4B790813DAA65C003B65AE /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B790613DAA65C003B65AE /* InfoViewController.m */; };
+		8D4B790913DAA65C003B65AE /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4B790713DAA65C003B65AE /* InfoViewController.xib */; };
+		8D7C2D8313CC8BC2000CA315 /* smiley.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D7C2D8213CC8BC2000CA315 /* smiley.gif */; };
+		8D91441D13CCC33800498E08 /* JogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D91441B13CCC33700498E08 /* JogViewController.m */; };
+		8D91441E13CCC33800498E08 /* JogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D91441C13CCC33700498E08 /* JogViewController.xib */; };
+		8D91442113CCD4FA00498E08 /* JogPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D91442013CCD4F900498E08 /* JogPoint.m */; };
+		8D91442D13CCFBA100498E08 /* JogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D91442C13CCFB9F00498E08 /* JogView.m */; };
+		8DD0DA0B13DF13CB00DD6C92 /* JogInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0DA0A13DF13CB00DD6C92 /* JogInfo.m */; };
+		8DD0DA0E13DF4DEF00DD6C92 /* frozenglass.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8DD0DA0D13DF4DEF00DD6C92 /* frozenglass.JPG */; };
+		8DD0DA1013DF6DA500DD6C92 /* fiberglass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DD0DA0F13DF6DA500DD6C92 /* fiberglass.jpg */; };
+		8DD3571113D4B6FB00FF8B71 /* sunny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3571013D4B6FB00FF8B71 /* sunny.jpg */; };
+		8DD3571313D4B99E00FF8B71 /* partlycloudy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3571213D4B99E00FF8B71 /* partlycloudy.jpg */; };
+		8DD4FE6313D74A3300E8A134 /* green_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DD4FE6213D74A3300E8A134 /* green_gradient.jpg */; };
+		8DD4FE6613D74DA100E8A134 /* red-gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DD4FE6513D74DA100E8A134 /* red-gradient.jpg */; };
+		8DD4FE6D13D753C800E8A134 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 8DD4FE6C13D753C600E8A134 /* TODO */; };
+		8DD4FE6F13D754CE00E8A134 /* jogbuddy_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD4FE6E13D754CE00E8A134 /* jogbuddy_logo.png */; };
+		8DE6A59013D4932E0007CB1D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A58E13D4932D0007CB1D /* HomeViewController.m */; };
+		8DE6A59113D4932E0007CB1D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A58F13D4932E0007CB1D /* HomeViewController.xib */; };
+		8DE6A59813D4A5940007CB1D /* WeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A59713D4A5930007CB1D /* WeatherInfo.m */; };
+		8DE6A59B13D4A6420007CB1D /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A59A13D4A6410007CB1D /* WeatherService.m */; };
+		8DE7DD1813CA8C6300CC9F37 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DE7DD1713CA8C6300CC9F37 /* house.png */; };
+		8DED47D213D609E3008C5264 /* cloudy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DED47D113D609E3008C5264 /* cloudy.jpg */; };
+		8DED47D513D609E8008C5264 /* sunny_flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DED47D413D609E8008C5264 /* sunny_flower.jpg */; };
+		8DED47D913D6252F008C5264 /* rainy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DED47D813D6252F008C5264 /* rainy.jpg */; };
+		8DF265AF13C52A800005E468 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF265AE13C52A800005E468 /* UIKit.framework */; };
+		8DF265B113C52A800005E468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF265B013C52A800005E468 /* Foundation.framework */; };
+		8DF265B313C52A800005E468 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF265B213C52A800005E468 /* CoreGraphics.framework */; };
+		8DF265B913C52A800005E468 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DF265B713C52A800005E468 /* InfoPlist.strings */; };
+		8DF265BC13C52A800005E468 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF265BB13C52A800005E468 /* main.m */; };
+		8DF265BF13C52A800005E468 /* JogBuddyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF265BE13C52A800005E468 /* JogBuddyAppDelegate.m */; };
+		8DF265C313C52A800005E468 /* JogBuddyAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF265C213C52A800005E468 /* JogBuddyAppDelegate_iPhone.m */; };
+		8DF265C613C52A800005E468 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF265C413C52A800005E468 /* MainWindow_iPhone.xib */; };
+		8DF265CA13C52A800005E468 /* JogBuddyAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF265C913C52A800005E468 /* JogBuddyAppDelegate_iPad.m */; };
+		8DF265CD13C52A800005E468 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF265CB13C52A800005E468 /* MainWindow_iPad.xib */; };
+		8DF2E88313C9336D00A79D53 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF2E88213C9336D00A79D53 /* MapKit.framework */; };
+		8DF2E88613C9337400A79D53 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF2E88513C9337400A79D53 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D4B790513DAA65C003B65AE /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		8D4B790613DAA65C003B65AE /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		8D4B790713DAA65C003B65AE /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		8D7C2D8213CC8BC2000CA315 /* smiley.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = smiley.gif; sourceTree = "<group>"; };
+		8D91441A13CCC33700498E08 /* JogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogViewController.h; sourceTree = "<group>"; };
+		8D91441B13CCC33700498E08 /* JogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogViewController.m; sourceTree = "<group>"; };
+		8D91441C13CCC33700498E08 /* JogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JogViewController.xib; sourceTree = "<group>"; };
+		8D91441F13CCD4F800498E08 /* JogPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogPoint.h; sourceTree = "<group>"; };
+		8D91442013CCD4F900498E08 /* JogPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogPoint.m; sourceTree = "<group>"; };
+		8D91442B13CCFB9E00498E08 /* JogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JogView.h; path = ../JogView.h; sourceTree = "<group>"; };
+		8D91442C13CCFB9F00498E08 /* JogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JogView.m; path = ../JogView.m; sourceTree = "<group>"; };
+		8DD0DA0913DF13CB00DD6C92 /* JogInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogInfo.h; sourceTree = "<group>"; };
+		8DD0DA0A13DF13CB00DD6C92 /* JogInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogInfo.m; sourceTree = "<group>"; };
+		8DD0DA0D13DF4DEF00DD6C92 /* frozenglass.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frozenglass.JPG; sourceTree = "<group>"; };
+		8DD0DA0F13DF6DA500DD6C92 /* fiberglass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fiberglass.jpg; sourceTree = "<group>"; };
+		8DD3571013D4B6FB00FF8B71 /* sunny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunny.jpg; sourceTree = "<group>"; };
+		8DD3571213D4B99E00FF8B71 /* partlycloudy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = partlycloudy.jpg; sourceTree = "<group>"; };
+		8DD4FE6213D74A3300E8A134 /* green_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_gradient.jpg; sourceTree = "<group>"; };
+		8DD4FE6513D74DA100E8A134 /* red-gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-gradient.jpg"; sourceTree = "<group>"; };
+		8DD4FE6C13D753C600E8A134 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		8DD4FE6E13D754CE00E8A134 /* jogbuddy_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jogbuddy_logo.png; sourceTree = "<group>"; };
+		8DE6A58D13D4932D0007CB1D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		8DE6A58E13D4932D0007CB1D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8DE6A58F13D4932E0007CB1D /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8DE6A59613D4A5920007CB1D /* WeatherInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInfo.h; sourceTree = "<group>"; };
+		8DE6A59713D4A5930007CB1D /* WeatherInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInfo.m; sourceTree = "<group>"; };
+		8DE6A59913D4A6400007CB1D /* WeatherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
+		8DE6A59A13D4A6410007CB1D /* WeatherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherService.m; sourceTree = "<group>"; };
+		8DE7DD1713CA8C6300CC9F37 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		8DED47D113D609E3008C5264 /* cloudy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cloudy.jpg; sourceTree = "<group>"; };
+		8DED47D413D609E8008C5264 /* sunny_flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunny_flower.jpg; sourceTree = "<group>"; };
+		8DED47D813D6252F008C5264 /* rainy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainy.jpg; sourceTree = "<group>"; };
+		8DF265AA13C52A800005E468 /* JogBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JogBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF265AE13C52A800005E468 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8DF265B013C52A800005E468 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8DF265B213C52A800005E468 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8DF265B613C52A800005E468 /* JogBuddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JogBuddy-Info.plist"; sourceTree = "<group>"; };
+		8DF265B813C52A800005E468 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DF265BA13C52A800005E468 /* JogBuddy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JogBuddy-Prefix.pch"; sourceTree = "<group>"; };
+		8DF265BB13C52A800005E468 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8DF265BD13C52A800005E468 /* JogBuddyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JogBuddyAppDelegate.h; sourceTree = "<group>"; };
+		8DF265BE13C52A800005E468 /* JogBuddyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JogBuddyAppDelegate.m; sourceTree = "<group>"; };
+		8DF265C113C52A800005E468 /* JogBuddyAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JogBuddyAppDelegate_iPhone.h; path = iPhone/JogBuddyAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		8DF265C213C52A800005E468 /* JogBuddyAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JogBuddyAppDelegate_iPhone.m; path = iPhone/JogBuddyAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		8DF265C513C52A800005E468 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		8DF265C813C52A800005E468 /* JogBuddyAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JogBuddyAppDelegate_iPad.h; path = iPad/JogBuddyAppDelegate_iPad.h; sourceTree = "<group>"; };
+		8DF265C913C52A800005E468 /* JogBuddyAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JogBuddyAppDelegate_iPad.m; path = iPad/JogBuddyAppDelegate_iPad.m; sourceTree = "<group>"; };
+		8DF265CC13C52A800005E468 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		8DF2E88213C9336D00A79D53 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8DF2E88513C9337400A79D53 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DF265A713C52A800005E468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF2E88613C9337400A79D53 /* CoreLocation.framework in Frameworks */,
+				8DF2E88313C9336D00A79D53 /* MapKit.framework in Frameworks */,
+				8DF265AF13C52A800005E468 /* UIKit.framework in Frameworks */,
+				8DF265B113C52A800005E468 /* Foundation.framework in Frameworks */,
+				8DF265B313C52A800005E468 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DF2659F13C52A800005E468 = {
+			isa = PBXGroup;
+			children = (
+				8DF2E88513C9337400A79D53 /* CoreLocation.framework */,
+				8DF2E88213C9336D00A79D53 /* MapKit.framework */,
+				8DF265B413C52A800005E468 /* JogBuddy */,
+				8DF265AD13C52A800005E468 /* Frameworks */,
+				8DF265AB13C52A800005E468 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DF265AB13C52A800005E468 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DF265AA13C52A800005E468 /* JogBuddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DF265AD13C52A800005E468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DF265AE13C52A800005E468 /* UIKit.framework */,
+				8DF265B013C52A800005E468 /* Foundation.framework */,
+				8DF265B213C52A800005E468 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DF265B413C52A800005E468 /* JogBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				8DE6A59913D4A6400007CB1D /* WeatherService.h */,
+				8DE6A59A13D4A6410007CB1D /* WeatherService.m */,
+				8DE6A59613D4A5920007CB1D /* WeatherInfo.h */,
+				8DE6A59713D4A5930007CB1D /* WeatherInfo.m */,
+				8DE6A58D13D4932D0007CB1D /* HomeViewController.h */,
+				8DE6A58E13D4932D0007CB1D /* HomeViewController.m */,
+				8DE6A58F13D4932E0007CB1D /* HomeViewController.xib */,
+				8D91442B13CCFB9E00498E08 /* JogView.h */,
+				8D91442C13CCFB9F00498E08 /* JogView.m */,
+				8D91441F13CCD4F800498E08 /* JogPoint.h */,
+				8D91442013CCD4F900498E08 /* JogPoint.m */,
+				8D91441A13CCC33700498E08 /* JogViewController.h */,
+				8D91441B13CCC33700498E08 /* JogViewController.m */,
+				8D91441C13CCC33700498E08 /* JogViewController.xib */,
+				8DF265BD13C52A800005E468 /* JogBuddyAppDelegate.h */,
+				8DF265BE13C52A800005E468 /* JogBuddyAppDelegate.m */,
+				8D4B790513DAA65C003B65AE /* InfoViewController.h */,
+				8D4B790613DAA65C003B65AE /* InfoViewController.m */,
+				8D4B790713DAA65C003B65AE /* InfoViewController.xib */,
+				8DD0DA0913DF13CB00DD6C92 /* JogInfo.h */,
+				8DD0DA0A13DF13CB00DD6C92 /* JogInfo.m */,
+				8DD4FE6C13D753C600E8A134 /* TODO */,
+				8DF265C013C52A800005E468 /* iPhone */,
+				8DF265C713C52A800005E468 /* iPad */,
+				8DF265B513C52A800005E468 /* Supporting Files */,
+			);
+			path = JogBuddy;
+			sourceTree = "<group>";
+		};
+		8DF265B513C52A800005E468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DD0DA0F13DF6DA500DD6C92 /* fiberglass.jpg */,
+				8DD0DA0D13DF4DEF00DD6C92 /* frozenglass.JPG */,
+				8DD4FE6E13D754CE00E8A134 /* jogbuddy_logo.png */,
+				8DD4FE6513D74DA100E8A134 /* red-gradient.jpg */,
+				8DD4FE6213D74A3300E8A134 /* green_gradient.jpg */,
+				8DED47D813D6252F008C5264 /* rainy.jpg */,
+				8DED47D413D609E8008C5264 /* sunny_flower.jpg */,
+				8DED47D113D609E3008C5264 /* cloudy.jpg */,
+				8DD3571213D4B99E00FF8B71 /* partlycloudy.jpg */,
+				8DD3571013D4B6FB00FF8B71 /* sunny.jpg */,
+				8D7C2D8213CC8BC2000CA315 /* smiley.gif */,
+				8DE7DD1713CA8C6300CC9F37 /* house.png */,
+				8DF265B613C52A800005E468 /* JogBuddy-Info.plist */,
+				8DF265B713C52A800005E468 /* InfoPlist.strings */,
+				8DF265BA13C52A800005E468 /* JogBuddy-Prefix.pch */,
+				8DF265BB13C52A800005E468 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DF265C013C52A800005E468 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				8DF265C113C52A800005E468 /* JogBuddyAppDelegate_iPhone.h */,
+				8DF265C213C52A800005E468 /* JogBuddyAppDelegate_iPhone.m */,
+				8DF265C413C52A800005E468 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		8DF265C713C52A800005E468 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				8DF265C813C52A800005E468 /* JogBuddyAppDelegate_iPad.h */,
+				8DF265C913C52A800005E468 /* JogBuddyAppDelegate_iPad.m */,
+				8DF265CB13C52A800005E468 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DF265A913C52A800005E468 /* JogBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DF265D013C52A800005E468 /* Build configuration list for PBXNativeTarget "JogBuddy" */;
+			buildPhases = (
+				8DF265A613C52A800005E468 /* Sources */,
+				8DF265A713C52A800005E468 /* Frameworks */,
+				8DF265A813C52A800005E468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JogBuddy;
+			productName = JogBuddy;
+			productReference = 8DF265AA13C52A800005E468 /* JogBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DF265A113C52A800005E468 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = HighOnCoding;
+			};
+			buildConfigurationList = 8DF265A413C52A800005E468 /* Build configuration list for PBXProject "JogBuddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8DF2659F13C52A800005E468;
+			productRefGroup = 8DF265AB13C52A800005E468 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DF265A913C52A800005E468 /* JogBuddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DF265A813C52A800005E468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF265B913C52A800005E468 /* InfoPlist.strings in Resources */,
+				8DF265C613C52A800005E468 /* MainWindow_iPhone.xib in Resources */,
+				8DF265CD13C52A800005E468 /* MainWindow_iPad.xib in Resources */,
+				8DE7DD1813CA8C6300CC9F37 /* house.png in Resources */,
+				8D7C2D8313CC8BC2000CA315 /* smiley.gif in Resources */,
+				8D91441E13CCC33800498E08 /* JogViewController.xib in Resources */,
+				8DE6A59113D4932E0007CB1D /* HomeViewController.xib in Resources */,
+				8DD3571113D4B6FB00FF8B71 /* sunny.jpg in Resources */,
+				8DD3571313D4B99E00FF8B71 /* partlycloudy.jpg in Resources */,
+				8DED47D213D609E3008C5264 /* cloudy.jpg in Resources */,
+				8DED47D513D609E8008C5264 /* sunny_flower.jpg in Resources */,
+				8DED47D913D6252F008C5264 /* rainy.jpg in Resources */,
+				8DD4FE6313D74A3300E8A134 /* green_gradient.jpg in Resources */,
+				8DD4FE6613D74DA100E8A134 /* red-gradient.jpg in Resources */,
+				8DD4FE6D13D753C800E8A134 /* TODO in Resources */,
+				8DD4FE6F13D754CE00E8A134 /* jogbuddy_logo.png in Resources */,
+				8D4B790913DAA65C003B65AE /* InfoViewController.xib in Resources */,
+				8DD0DA0E13DF4DEF00DD6C92 /* frozenglass.JPG in Resources */,
+				8DD0DA1013DF6DA500DD6C92 /* fiberglass.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DF265A613C52A800005E468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF265BC13C52A800005E468 /* main.m in Sources */,
+				8DF265BF13C52A800005E468 /* JogBuddyAppDelegate.m in Sources */,
+				8DF265C313C52A800005E468 /* JogBuddyAppDelegate_iPhone.m in Sources */,
+				8DF265CA13C52A800005E468 /* JogBuddyAppDelegate_iPad.m in Sources */,
+				8D91441D13CCC33800498E08 /* JogViewController.m in Sources */,
+				8D91442113CCD4FA00498E08 /* JogPoint.m in Sources */,
+				8D91442D13CCFBA100498E08 /* JogView.m in Sources */,
+				8DE6A59013D4932E0007CB1D /* HomeViewController.m in Sources */,
+				8DE6A59813D4A5940007CB1D /* WeatherInfo.m in Sources */,
+				8DE6A59B13D4A6420007CB1D /* WeatherService.m in Sources */,
+				8D4B790813DAA65C003B65AE /* InfoViewController.m in Sources */,
+				8DD0DA0B13DF13CB00DD6C92 /* JogInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8DF265B713C52A800005E468 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DF265B813C52A800005E468 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8DF265C413C52A800005E468 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DF265C513C52A800005E468 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		8DF265CB13C52A800005E468 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DF265CC13C52A800005E468 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DF265CE13C52A800005E468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DF265CF13C52A800005E468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8DF265D113C52A800005E468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JogBuddy/JogBuddy-Prefix.pch";
+				INFOPLIST_FILE = "JogBuddy/JogBuddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8DF265D213C52A800005E468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JogBuddy/JogBuddy-Prefix.pch";
+				INFOPLIST_FILE = "JogBuddy/JogBuddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DF265A413C52A800005E468 /* Build configuration list for PBXProject "JogBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DF265CE13C52A800005E468 /* Debug */,
+				8DF265CF13C52A800005E468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DF265D013C52A800005E468 /* Build configuration list for PBXNativeTarget "JogBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DF265D113C52A800005E468 /* Debug */,
+				8DF265D213C52A800005E468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DF265A113C52A800005E468 /* Project object */;
+}

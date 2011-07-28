@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D4B790813DAA65C003B65AE /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B790613DAA65C003B65AE /* InfoViewController.m */; };
 		8D4B790913DAA65C003B65AE /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4B790713DAA65C003B65AE /* InfoViewController.xib */; };
+		8D537EAC13E0AF940003F175 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D537EAB13E0AF940003F175 /* Utilities.m */; };
 		8D7C2D8313CC8BC2000CA315 /* smiley.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D7C2D8213CC8BC2000CA315 /* smiley.gif */; };
 		8D91441D13CCC33800498E08 /* JogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D91441B13CCC33700498E08 /* JogViewController.m */; };
 		8D91441E13CCC33800498E08 /* JogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D91441C13CCC33700498E08 /* JogViewController.xib */; };
@@ -49,6 +50,8 @@
 		8D4B790513DAA65C003B65AE /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		8D4B790613DAA65C003B65AE /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		8D4B790713DAA65C003B65AE /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		8D537EAA13E0AF940003F175 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		8D537EAB13E0AF940003F175 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		8D7C2D8213CC8BC2000CA315 /* smiley.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = smiley.gif; sourceTree = "<group>"; };
 		8D91441A13CCC33700498E08 /* JogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogViewController.h; sourceTree = "<group>"; };
 		8D91441B13CCC33700498E08 /* JogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogViewController.m; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				8D4B790713DAA65C003B65AE /* InfoViewController.xib */,
 				8DD0DA0913DF13CB00DD6C92 /* JogInfo.h */,
 				8DD0DA0A13DF13CB00DD6C92 /* JogInfo.m */,
+				8D537EAA13E0AF940003F175 /* Utilities.h */,
+				8D537EAB13E0AF940003F175 /* Utilities.m */,
 				8DD4FE6C13D753C600E8A134 /* TODO */,
 				8DF265C013C52A800005E468 /* iPhone */,
 				8DF265C713C52A800005E468 /* iPad */,
@@ -309,6 +314,7 @@
 				8DE6A59B13D4A6420007CB1D /* WeatherService.m in Sources */,
 				8D4B790813DAA65C003B65AE /* InfoViewController.m in Sources */,
 				8DD0DA0B13DF13CB00DD6C92 /* JogInfo.m in Sources */,
+				8D537EAC13E0AF940003F175 /* Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

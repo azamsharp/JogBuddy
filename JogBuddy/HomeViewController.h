@@ -22,6 +22,7 @@
     CLLocationManager *locationManager;
     MKReverseGeocoder *reverseGeoCoder;
     IBOutlet UILabel *loadingLabel; 
+    IBOutlet UILabel *cityStateLabel; 
 }
 
 -(IBAction) loadMap; 
@@ -37,5 +38,6 @@
 @property (nonatomic,retain) CLLocationManager *locationManager;
 @property (nonatomic,retain) MKReverseGeocoder *reverseGeoCoder; 
 @property (nonatomic,retain) IBOutlet UILabel *loadingLabel; 
+@property (nonatomic,retain) IBOutlet UILabel *cityStateLabel; 
 
 @end

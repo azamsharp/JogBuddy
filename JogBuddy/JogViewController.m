@@ -10,6 +10,8 @@
 
 @implementation JogViewController
 
+static const int OFF_SCREEN_Y_AXIS = 500; 
+
 @synthesize mapView,locationManager,jogPoints,jogView,jogPoint,infoToolBar,speedLabel,distanceLabel,infoButton,contentView,infoView,mapSegmentedControl; 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -70,12 +72,9 @@
 
 -(IBAction) loadInfoView 
 {
-    [UIView beginAnimations:nil context:nil]; 
-    [UIView setAnimationDuration:0.75]; 
     
-    [UIView setAnimationTransition:([self.mapView superview] ?
-									UIViewAnimationTransitionFlipFromLeft : UIViewAnimationTransitionFlipFromRight) forView:self.contentView cache:YES]; 
-    
+    [self.contentView flipFromLeftAnimationStart];
+     
     if(CGRectIsEmpty(oldSegmentControlRect)) 
     {
         oldSegmentControlRect = self.mapSegmentedControl.frame; 
@@ -83,42 +82,39 @@
     
     
     if([self.mapView superview]) 
-    {
-        CGRect mapSegmentRect = self.mapSegmentedControl.bounds;  
+    {        
+        [self.mapSegmentedControl slideDownAnimationStart:0.75];
         
-        [UIView beginAnimations:nil context:nil]; 
-        [UIView setAnimationDuration:0.75]; 
-        [UIView setAnimationTransition:UIViewAnimationOptionTransitionNone forView:self.mapSegmentedControl cache:YES]; 
-        
-        self.mapSegmentedControl.frame = CGRectMake(self.mapSegmentedControl.frame.origin.x, 500, self.mapSegmentedControl.frame.size.width, self.mapSegmentedControl.frame.size.height); 
-        
-        [UIView commitAnimations];
+        [self.mapSegmentedControl commitAnimations]; 
         
         [self.mapView removeFromSuperview];
       
         InfoViewController *infoViewController = [[InfoViewController alloc] initWithJogInfo:jogInfo]; 
-        self.infoView = infoViewController.view; 
+        self.infoView = infoViewController.view;
+        
+        [self.contentView setContentMode:UIViewContentModeScaleAspectFit]; 
+        
+        [UIView beginAnimations:nil context:nil]; 
+        [UIView setAnimationDuration:2.0]; 
 
-        
-        self.infoView.frame = CGRectMake(0, 0, self.contentView.frame.size.width, 
-                                            self.contentView.frame.size.height + mapSegmentRect.size.height);  
-        
-        
         [self.contentView addSubview:self.infoView]; 
- 
         
+        [UIView commitAnimations]; 
+
     }
     else 
-    {        
-        self.mapSegmentedControl.frame = oldSegmentControlRect; 
+    {    
+        [self.mapSegmentedControl slideUpAnimationStart:0.75 oldRect:oldSegmentControlRect]; 
+        
+        [self.mapSegmentedControl commitAnimations]; 
         
         [self.view addSubview:self.mapSegmentedControl]; 
 
         [self.infoView removeFromSuperview];
         [self.contentView addSubview:self.mapView];
     }
-    
-    [UIView commitAnimations]; 
+        
+    [self.contentView commitAnimations]; 
     
  }
 

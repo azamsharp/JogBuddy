@@ -14,6 +14,7 @@
 #import "JogPoint.h" 
 #import "JogView.h" 
 #import "JogInfo.h"
+#import "Utilities.h" 
 
 
 @interface JogViewController : UIViewController<MKMapViewDelegate,CLLocationManagerDelegate> {

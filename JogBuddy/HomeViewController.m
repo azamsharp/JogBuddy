@@ -13,7 +13,7 @@
 
 NSString *const GOOGLE_WEATHER_FEED = @"http://www.google.com/ig/api?weather="; 
 
-@synthesize weatherImage,temperatureLabel,toolbar,weatherView,weatherCondition,locationManager,reverseGeoCoder,loadingLabel; 
+@synthesize weatherImage,temperatureLabel,toolbar,weatherView,weatherCondition,locationManager,reverseGeoCoder,loadingLabel,cityStateLabel; 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -74,9 +74,15 @@ NSString *const GOOGLE_WEATHER_FEED = @"http://www.google.com/ig/api?weather=";
     
     [self.weatherCondition setText:weatherInfo.weatherCondition];
     [self.weatherCondition sizeToFit];    
-    [self.weatherCondition setTextAlignment:UITextAlignmentCenter]; 
+    [self.weatherCondition setTextAlignment:UITextAlignmentCenter];
     
     [self.weatherCondition setCenter:CGPointMake(center.x,center.y/2)]; 
+    
+    [self.cityStateLabel setText:weatherInfo.city]; 
+    [self.cityStateLabel sizeToFit]; 
+    [self.cityStateLabel setTextAlignment:UITextAlignmentCenter]; 
+    
+    [self.cityStateLabel setCenter:CGPointMake(center.x, center.y/1.5)]; 
     
     self.weatherView.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:weatherInfo.weatherConditionImage]];
 
@@ -101,13 +107,14 @@ NSString *const GOOGLE_WEATHER_FEED = @"http://www.google.com/ig/api?weather=";
     
     UIBarButtonItem *startButton = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(loadMap)];
 
-
+    [startButton setTitle:@"Start"];
+    
     UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"jogbuddy_logo.png"]];
     
     UIBarButtonItem *titleButton = [[UIBarButtonItem alloc] initWithCustomView:logoView];     
     UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     
-  [self.toolbar setItems:[NSArray arrayWithObjects:startButton, flexibleSpace,titleButton,flexibleSpace,nil] animated:YES];
+  [self.toolbar setItems:[NSArray arrayWithObjects:startButton,flexibleSpace,titleButton,nil] animated:YES];
     
     [startButton release]; 
     [flexibleSpace release];

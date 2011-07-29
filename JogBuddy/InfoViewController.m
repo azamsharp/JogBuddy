@@ -7,10 +7,11 @@
 //
 
 #import "InfoViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation InfoViewController
 
-@synthesize jogInfo,distanceLabel,backButton; 
+@synthesize jogInfo,distanceLabel,stopButton; 
 
 -(id) initWithJogInfo:(JogInfo *)ji
 {
@@ -38,12 +39,6 @@
 
 #pragma mark - View lifecycle
 
--(IBAction)backButtonClicked 
-{
-    
-    
-    NSLog(@"backbuttonclicked");
-}
 
 - (void)viewDidLoad
 {
@@ -53,11 +48,27 @@
     [self.distanceLabel sizeToFit]; 
     [self.distanceLabel setText:[NSString stringWithFormat:@"%.02f miles",self.jogInfo.distance]];
     
-    UIImage *backgroundImage = [UIImage imageNamed:@"fiberglass.jpg"];
+    UIImage *backgroundImage = [UIImage imageNamed:@"sky.jpg"];
 
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"sky.jpg"]];
     
-   // self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"fiberglass.jpg"]];
+    // Create the path (with only the top-left corner rounded)
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.stopButton.bounds 
+                                                   byRoundingCorners:UIRectCornerAllCorners  
+                                                         cornerRadii:CGSizeMake(12.0, 12.0)];
     
+    // Create the shape layer and set its path
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame = self.stopButton.bounds;
+    maskLayer.path = maskPath.CGPath;
+    
+    // Set the newly created shape layer as the mask for the image view's layer
+    self.stopButton.layer.mask = maskLayer;
+    
+//    [[self.stopButton layer] setCornerRadius:8.0f];
+//    [[self.stopButton layer] setMasksToBounds:YES];
+//    [[self.stopButton layer] setBorderWidth:1.0f];
+//    
 }
 
 - (void)viewDidUnload

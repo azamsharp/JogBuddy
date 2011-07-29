@@ -13,16 +13,13 @@
 {
     JogInfo *jogInfo; 
     IBOutlet UILabel *distanceLabel; 
-    IBOutlet UIBarButtonItem *backButton; 
-    
+    IBOutlet UIButton *stopButton;
 }
 
 -(id) initWithJogInfo:(JogInfo *) ji;
--(IBAction) backButtonClicked; 
-
 
 @property (nonatomic,retain) JogInfo *jogInfo; 
 @property (nonatomic,retain) IBOutlet UILabel *distanceLabel; 
-@property (nonatomic,retain) IBOutlet UIBarButtonItem *backButton; 
+@property (nonatomic,retain) IBOutlet UIButton *stopButton; 
 
 @end

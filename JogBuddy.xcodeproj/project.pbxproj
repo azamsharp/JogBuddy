@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D40AD0D13E3284C007EA4D8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D40AD0C13E3284C007EA4D8 /* QuartzCore.framework */; };
 		8D4B790813DAA65C003B65AE /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B790613DAA65C003B65AE /* InfoViewController.m */; };
 		8D4B790913DAA65C003B65AE /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4B790713DAA65C003B65AE /* InfoViewController.xib */; };
 		8D537EAC13E0AF940003F175 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D537EAB13E0AF940003F175 /* Utilities.m */; };
 		8D7C2D8313CC8BC2000CA315 /* smiley.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D7C2D8213CC8BC2000CA315 /* smiley.gif */; };
+		8D7D748013E1086C000B4114 /* sky.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8D7D747F13E1086C000B4114 /* sky.JPG */; };
 		8D91441D13CCC33800498E08 /* JogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D91441B13CCC33700498E08 /* JogViewController.m */; };
 		8D91441E13CCC33800498E08 /* JogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D91441C13CCC33700498E08 /* JogViewController.xib */; };
 		8D91442113CCD4FA00498E08 /* JogPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D91442013CCD4F900498E08 /* JogPoint.m */; };
@@ -47,12 +49,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D40AD0C13E3284C007EA4D8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D4B790513DAA65C003B65AE /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		8D4B790613DAA65C003B65AE /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		8D4B790713DAA65C003B65AE /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		8D537EAA13E0AF940003F175 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		8D537EAB13E0AF940003F175 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		8D7C2D8213CC8BC2000CA315 /* smiley.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = smiley.gif; sourceTree = "<group>"; };
+		8D7D747F13E1086C000B4114 /* sky.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.JPG; sourceTree = "<group>"; };
 		8D91441A13CCC33700498E08 /* JogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogViewController.h; sourceTree = "<group>"; };
 		8D91441B13CCC33700498E08 /* JogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogViewController.m; sourceTree = "<group>"; };
 		8D91441C13CCC33700498E08 /* JogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JogViewController.xib; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D40AD0D13E3284C007EA4D8 /* QuartzCore.framework in Frameworks */,
 				8DF2E88613C9337400A79D53 /* CoreLocation.framework in Frameworks */,
 				8DF2E88313C9336D00A79D53 /* MapKit.framework in Frameworks */,
 				8DF265AF13C52A800005E468 /* UIKit.framework in Frameworks */,
@@ -120,6 +125,7 @@
 		8DF2659F13C52A800005E468 = {
 			isa = PBXGroup;
 			children = (
+				8D40AD0C13E3284C007EA4D8 /* QuartzCore.framework */,
 				8DF2E88513C9337400A79D53 /* CoreLocation.framework */,
 				8DF2E88213C9336D00A79D53 /* MapKit.framework */,
 				8DF265B413C52A800005E468 /* JogBuddy */,
@@ -183,6 +189,7 @@
 		8DF265B513C52A800005E468 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D7D747F13E1086C000B4114 /* sky.JPG */,
 				8DD0DA0F13DF6DA500DD6C92 /* fiberglass.jpg */,
 				8DD0DA0D13DF4DEF00DD6C92 /* frozenglass.JPG */,
 				8DD4FE6E13D754CE00E8A134 /* jogbuddy_logo.png */,
@@ -292,6 +299,7 @@
 				8D4B790913DAA65C003B65AE /* InfoViewController.xib in Resources */,
 				8DD0DA0E13DF4DEF00DD6C92 /* frozenglass.JPG in Resources */,
 				8DD0DA1013DF6DA500DD6C92 /* fiberglass.jpg in Resources */,
+				8D7D748013E1086C000B4114 /* sky.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

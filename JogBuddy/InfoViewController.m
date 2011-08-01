@@ -11,7 +11,9 @@
 
 @implementation InfoViewController
 
-@synthesize jogInfo,distanceLabel,stopButton; 
+int const OK_BUTTON = 1; 
+
+@synthesize jogInfo,distanceLabel,stopButton,eclapsedTime; 
 
 -(id) initWithJogInfo:(JogInfo *)ji
 {
@@ -47,28 +49,35 @@
     
     [self.distanceLabel sizeToFit]; 
     [self.distanceLabel setText:[NSString stringWithFormat:@"%.02f miles",self.jogInfo.distance]];
-    
-    UIImage *backgroundImage = [UIImage imageNamed:@"sky.jpg"];
 
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"sky.jpg"]];
+    [self.eclapsedTime setText:[NSString stringWithFormat:@"%.02f minutes",self.jogInfo.eclapsedTime]];
     
-    // Create the path (with only the top-left corner rounded)
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.stopButton.bounds 
-                                                   byRoundingCorners:UIRectCornerAllCorners  
-                                                         cornerRadii:CGSizeMake(12.0, 12.0)];
+    UIImage *backgroundImage = [UIImage imageNamed:@"sky.JPG"];
+
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:backgroundImage];
     
-    // Create the shape layer and set its path
-    CAShapeLayer *maskLayer = [CAShapeLayer layer];
-    maskLayer.frame = self.stopButton.bounds;
-    maskLayer.path = maskPath.CGPath;
+    self.stopButton.layer.cornerRadius = 12.0; 
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == OK_BUTTON) 
+    {
+       // end the jog 
+        // release everything and then go to the home view 
+     
+        HomeViewController *homeController = [[HomeViewController alloc] init];
+        self.view = homeController.view;  
+        [homeController.view release]; 
+    }
     
-    // Set the newly created shape layer as the mask for the image view's layer
-    self.stopButton.layer.mask = maskLayer;
-    
-//    [[self.stopButton layer] setCornerRadius:8.0f];
-//    [[self.stopButton layer] setMasksToBounds:YES];
-//    [[self.stopButton layer] setBorderWidth:1.0f];
-//    
+}
+
+-(IBAction)stopJog:(id)sender
+{
+    // confirmation view to stop the jog or not 
+    UIAlertView *confirm = [[[UIAlertView alloc] initWithTitle:@"Confirmation" message:@"Are you sure?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil] autorelease];
+    [confirm show]; 
 }
 
 - (void)viewDidUnload

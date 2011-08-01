@@ -35,6 +35,8 @@
     UIView *infoView; 
     IBOutlet UISegmentedControl *mapSegmentedControl; 
     CGRect oldSegmentControlRect; 
+    CFTimeInterval startTime; 
+    CFTimeInterval endTime; 
 }
 
 -(id) initWithCenterCoordinate:(CLLocationCoordinate2D) coord; 
@@ -53,5 +55,6 @@
 @property (nonatomic,retain) IBOutlet UIView *contentView; 
 @property (nonatomic,retain) UIView *infoView; 
 @property (nonatomic,retain) IBOutlet UISegmentedControl *mapSegmentedControl; 
+
 
 @end

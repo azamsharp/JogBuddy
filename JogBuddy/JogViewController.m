@@ -44,6 +44,8 @@ static const int OFF_SCREEN_Y_AXIS = 500;
 
 - (void)viewDidLoad
 {
+    NSLog(@"viewDidLoad");
+    
     [super viewDidLoad];
     
     oldSegmentControlRect = CGRectZero; 
@@ -62,7 +64,9 @@ static const int OFF_SCREEN_Y_AXIS = 500;
     [self.locationManager setDelegate:self];
     
     [self.locationManager startUpdatingLocation];
-        
+     
+    startTime = CFAbsoluteTimeGetCurrent(); 
+    
     [self.locationManager setDistanceFilter:kCLDistanceFilterNone];
     [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
         
@@ -139,10 +143,10 @@ static const int OFF_SCREEN_Y_AXIS = 500;
       jogPoint = [[JogPoint alloc] initWithCenterCoordinate:newLocation.coordinate];
       
        
-    [self.jogPoints addObject:jogPoint];
+       [self.jogPoints addObject:jogPoint];
   
         
-        if([self.jogPoints count] >= 2) {
+        if([self.jogPoints count] >= 5) {
         
         [self.mapView addOverlay:jogPoint];  
             
@@ -151,8 +155,9 @@ static const int OFF_SCREEN_Y_AXIS = 500;
         
         CLLocation *loc2 = [[CLLocation alloc] initWithLatitude:newLocation.coordinate.latitude longitude:newLocation.coordinate.longitude];
         
-        
         jogInfo.distance += ([loc1 distanceFromLocation:loc2]) * 0.000621371192;
+        
+        jogInfo.eclapsedTime = (CFAbsoluteTimeGetCurrent() - startTime) * 1000 * 60;     
             
         [self.distanceLabel setText:[NSString stringWithFormat:@"%.1lf miles",jogInfo.distance]];
         
@@ -196,6 +201,9 @@ static const int OFF_SCREEN_Y_AXIS = 500;
 
 - (void)dealloc
 {
+    [self.mapView release]; 
+    self.mapView = nil; 
+    
     [super dealloc];
 }
 

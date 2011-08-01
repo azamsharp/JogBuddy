@@ -29,8 +29,7 @@
 - (void)drawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale inContext:(CGContextRef)context
 {
     
-    
-    if(self.pointsToPlot.count < 2) return; 
+    if(self.pointsToPlot.count < 5) return; 
     
     CGMutablePathRef path = NULL; 
     

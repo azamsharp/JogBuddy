@@ -12,10 +12,12 @@
 {
     float distance; 
     float speed; 
+    float eclapsedTime; 
 
 }
 
 @property (nonatomic,assign) float distance; 
 @property (nonatomic,assign) float speed; 
+@property (nonatomic,assign) float eclapsedTime; 
 
 @end

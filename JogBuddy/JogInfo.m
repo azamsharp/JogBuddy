@@ -10,7 +10,7 @@
 
 @implementation JogInfo
 
-@synthesize distance,speed; 
+@synthesize distance,speed,eclapsedTime; 
 
 - (id)init
 {

@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 @implementation HomeViewController
@@ -26,7 +27,16 @@ NSString *const GOOGLE_WEATHER_FEED = @"http://www.google.com/ig/api?weather=";
 
 - (void)dealloc
 {
+    [self.locationManager release]; 
+    self.locationManager = nil; 
+    
+    [self.reverseGeoCoder release]; 
+    self.reverseGeoCoder = nil; 
+    
     [super dealloc];
+    
+
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,11 +49,22 @@ NSString *const GOOGLE_WEATHER_FEED = @"http://www.google.com/ig/api?weather=";
 
 - (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFailWithError:(NSError *)error
 {
+    NSLog(@"didFailWithError");
+//    
+//    UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"No internet connection" delegate:self cancelButtonTitle:nil otherButtonTitles:nil   , nil];
+//    
+//    if(error.code == 1009) 
+//    {
+//        [errorAlertView show]; 
+//    }
     
+    NSLog(@"didFailWithError (reverseGeocoder)");
 }
 
 - (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark *)placemark
 {
+    NSLog(@"didFindPlacemark");
+    
     [loadingLabel setHidden:YES]; 
     
     NSLog(@"postal code %@",placemark.postalCode);
@@ -105,7 +126,17 @@ NSString *const GOOGLE_WEATHER_FEED = @"http://www.google.com/ig/api?weather=";
     
     [items removeAllObjects]; 
     
-    UIBarButtonItem *startButton = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(loadMap)];
+    UIButton *roundStartButton = [UIButton buttonWithType:UIButtonTypeRoundedRect]; 
+    roundStartButton.frame = CGRectMake(10, 10, 100, 30); 
+    [roundStartButton setBackgroundImage:[UIImage imageNamed:@"green_gradient.jpg"] forState:UIControlStateNormal]; 
+    
+    [roundStartButton addTarget:self action:@selector(loadMap) forControlEvents:UIControlEventTouchUpInside];
+
+    roundStartButton.layer.cornerRadius = 12.0; 
+    [roundStartButton setTitle:@"Start" forState:UIControlStateNormal]; 
+    [[roundStartButton layer] setMasksToBounds:YES];
+    
+    UIBarButtonItem *startButton = [[UIBarButtonItem alloc] initWithCustomView:roundStartButton];
 
     [startButton setTitle:@"Start"];
     
@@ -114,7 +145,7 @@ NSString *const GOOGLE_WEATHER_FEED = @"http://www.google.com/ig/api?weather=";
     UIBarButtonItem *titleButton = [[UIBarButtonItem alloc] initWithCustomView:logoView];     
     UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     
-  [self.toolbar setItems:[NSArray arrayWithObjects:startButton,flexibleSpace,titleButton,nil] animated:YES];
+  [self.toolbar setItems:[NSArray arrayWithObjects:startButton,flexibleSpace,nil] animated:YES];
     
     [startButton release]; 
     [flexibleSpace release];
@@ -149,6 +180,7 @@ NSString *const GOOGLE_WEATHER_FEED = @"http://www.google.com/ig/api?weather=";
     [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     
     [self.locationManager startUpdatingLocation];
+    
 }
 
 - (void)viewDidUnload
